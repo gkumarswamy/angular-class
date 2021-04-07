@@ -1,0 +1,30 @@
+step0
+    git clone https://github.com/gkumarswamy/angular-class.git
+
+step1
+ git pull origin master
+
+step2
+    git status
+
+step3
+    git add .
+
+step3
+    git commit -m "project setup"
+
+step4
+    git push origin master
+
+
+branch
+    master
+
+git checkout -b branch name
+
+ex: git checkout -b dev
+
+move to one branch to anther branch 
+
+git checkout branch name
+ex git checkout dev
