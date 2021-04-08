@@ -1,0 +1,7 @@
+1. package.json
+2.angular.json
+    main.js
+       go to AppModule 
+            go to app componemt
+                use selector from app component to load the index.html file
+    index.html
