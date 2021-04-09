@@ -1,0 +1,35 @@
+Step1:
+    node js install
+
+
+
+step2:
+    install angular cli
+        
+        npm install -g @angular/cli
+
+note : only once install avove cmds
+
+
+step3:
+
+    cerate project 
+
+    1. ng new project name(myapp, mgangular)
+
+    2. ng serve -o(excute with in project floder)
+
+    note : here once created project after that run project
+
+
+    step4
+
+    in side project steps
+
+
+    1. component : ng g c component name(login, signup, header, footer , etc)
+
+
+    step5
+
+npm i (install)
