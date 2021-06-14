@@ -4,26 +4,30 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { Routes, RouterModule } from '@angular/router';
+import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
-  {path:'home', component:HomeComponent},
-  {path:'about', component:AboutComponent},
-  {path:'contact', component:ContactComponent},
-  {path:'', component:HomeComponent},
+  {
+    path:'', component:LayoutComponent, 
+    children:[
+      {path:'home', component:HomeComponent},
+      {path:'about', component:AboutComponent},
+      {path:'contact', component:ContactComponent},
+      {path:'', component:HomeComponent},
+    ]
+  }
 ];
 
 @NgModule({
   declarations: [
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    LayoutComponent
   ],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
-  ],
-  exports:[
-    RouterModule
+    RouterModule.forChild(routes)
   ]
 })
 export class SiteModule { }

@@ -10,9 +10,6 @@ const routes: Routes = [
   {path:'edit-student/:id', component:StudentformComponent},
 ];
 
-
-
-
 @NgModule({
   declarations: [
     StudentListComponent,
