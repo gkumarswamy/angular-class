@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { SiteModule } from './site/site.module';
+import { AuthModule } from './auth/auth.module';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     SiteModule,
-    SharedModule
+    SharedModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
