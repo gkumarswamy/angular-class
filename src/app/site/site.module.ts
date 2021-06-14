@@ -23,9 +23,6 @@ const routes: Routes = [
     RouterModule.forRoot(routes)
   ],
   exports:[
-    HomeComponent,
-    AboutComponent,
-    ContactComponent,
     RouterModule
   ]
 })
