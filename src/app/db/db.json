@@ -1,0 +1,6 @@
+{
+    "students":[
+        {"id":1,"roll_no":"S001","name":"kumar","email_id":"kumar@gmail.com", "password":"admin","phone_no":"", "qualification":"btech", "branch":"IT" },
+        {"id":1,"roll_no":"S002","name":"haritha","email_id":"haritha@gmail.com", "password":"admin","phone_no":"", "qualification":"btech", "branch":"ECE" }
+    ]
+}
