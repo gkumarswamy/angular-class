@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Student } from '../../models/student';
+import { ApiService} from '../../serives/api.service'
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpComponent implements OnInit {
 
-  constructor() { }
+  formObj : Student = new Student();
+  constructor(
+    private apiService:ApiService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  onSubmitSignup(){
+    console.log(this.formObj);
+    let url = 'students'
+    this.apiService.postRequest(url, this.formObj)
+    .subscribe((res)=>{
+      console.log(res);
+      this.formObj = new Student();
+    })
   }
 
 }
